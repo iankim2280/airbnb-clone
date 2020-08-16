@@ -1,0 +1,33 @@
+@charset "utf-8";
+@import "~bootstrap/scss/bootstrap";
+// Import a Google Font
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+
+@import "components/Footer/footer";
+@import "components/Section/section";
+@import "components/Header/header";
+@import "pages/Home/Home";
+
+// custom variables
+
+// $between: space-between;
+// $around: space-around;
+// $border-black: 1px solid black;
+// $border-lightgrey: 0.1px solid $grey-light;
+// $purple: #8a4d76;
+
+body {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+}
+
+.container1 {
+  margin: 0 auto;
+  max-width: 1900px;
+  // background-color: $purple;
+}
+
+// module or styled components
+// =border-radius($radius) {
+//   -webkit-border-radius: $radius;
+// }

@@ -1,0 +1,89 @@
+.accountDiv {
+  width: 320px;
+  height: 180px;
+  font-size: 2rem;
+  background-color: white;
+  border-bottom: $border-lightgrey;
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
+  p:nth-child(3) {
+    font-size: 0.9rem;
+  }
+}
+.accountDiv1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.accountDiv2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.accountDiv3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.accountDiv4 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.accountDiv5 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.accountDiv6 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.accountDiv7 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.accountDiv8 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+@media only screen and (max-width: 1000px) {
+  .accountDiv1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .accountDiv2 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .accountDiv3 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .accountDiv4 {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .accountDiv5 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .accountDiv6 {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+  .accountDiv7 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+  .accountDiv8 {
+    grid-area: 4 / 2 / 5 / 3;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .accountDiv1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .accountDiv2 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .accountDiv3 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .accountDiv4 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+  .accountDiv5 {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+  .accountDiv6 {
+    grid-area: 6 / 1 / 7 / 2;
+  }
+  .accountDiv7 {
+    grid-area: 7 / 1 / 8 / 2;
+  }
+  .accountDiv8 {
+    grid-area: 8 / 1 / 9 / 2;
+  }
+}
