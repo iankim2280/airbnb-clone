@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import AccountDiv from "../../components/AccountDiv";
 
 const AccountMain = styled.section`
   padding: 20px;
@@ -40,7 +41,9 @@ const Account = () => {
   return (
     <AccountMain>
       <Boxes>
-        <Parents></Parents>
+        <Parents>
+          <AccountDiv />
+        </Parents>
       </Boxes>
     </AccountMain>
   );

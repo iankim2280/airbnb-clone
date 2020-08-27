@@ -1,14 +1,3 @@
-.accountDiv {
-  width: 320px;
-  height: 180px;
-  font-size: 2rem;
-  background-color: white;
-  border-bottom: $border-lightgrey;
-  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
-  p:nth-child(3) {
-    font-size: 0.9rem;
-  }
-}
 .accountDiv1 {
   grid-area: 1 / 1 / 2 / 2;
 }

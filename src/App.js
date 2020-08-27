@@ -31,6 +31,8 @@ function App() {
     <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path="/profile" component={null} />
+      <Route path="/login" component={Login} />
+      <Route path="/signup" component={Signup} />
       <Route path="/account" component={Account} />
       <Route path="/contents" component={Contents} />
       <Redirect from="*" to="/" />
@@ -39,10 +41,8 @@ function App() {
 
   const publicRouter = () => (
     <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/login" component={Login} />
-      <Route path="/signup" component={Signup} />
-      <Redirect from="*" to="/login" />
+      {/* <Route exact path="/" component={Home} />
+      <Redirect from="*" to="/login" /> */}
     </Switch>
   );
   return (
@@ -58,7 +58,7 @@ function App() {
       >
         Login
       </button> */}
-      <Body isAuthenticated={isAuthenticated} />
+      {/* <Body isAuthenticated={isAuthenticated} /> */}
       {isAuthenticated ? privateRouter() : publicRouter()}
       <Section />
       <Footer />
