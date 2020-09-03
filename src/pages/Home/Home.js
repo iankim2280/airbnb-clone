@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-// import HomeCard from "../../components/HomeCard";
+import { Img } from "react-image";
+import HomeCard from "../../components/HomeCard";
 
 const Heading = styled.section`
   padding: 50px;
@@ -32,7 +33,24 @@ const HeroCardCarousel = styled.section`
   .card3 {
     grid-area: 1 / 3 / 2 / 4;
   }
+  @media only screen and (max-width: 1000px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    .card1 {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+    .card2 {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+    .card3 {
+      grid-area: 3 / 1 / 4 / 2;
+    }
+  }
 `;
+
 const Home = () => {
   return (
     <nav className="mg-s20">
@@ -50,55 +68,7 @@ const Home = () => {
         </Title>
       </Heading>
       <HeroCardCarousel>
-        {/* <HomeCard /> */}
-        <div className="card1 pd-10">
-          <div className="card-image shadowBox">
-            <figure className="image is-4by3">
-              <img
-                src="https://picsum.photos/seed/picsum/600/400"
-                alt="Placeholder image"
-              />
-              <div className="text-block pd-10">
-                <p>Online Experiences</p>
-                <p>
-                  Unique activities we can do together, led by a world of hosts.
-                </p>
-              </div>
-            </figure>
-          </div>
-        </div>
-        <div className="card2 pd-10">
-          <div className="card-image shadowBox">
-            <figure className="image is-4by3">
-              <img
-                src="https://picsum.photos/seed/picsum/600/400"
-                alt="Placeholder image"
-              />
-              <div className="text-block pd-10">
-                <p>Online Experiences</p>
-                <p>
-                  Unique activities we can do together, led by a world of hosts.
-                </p>
-              </div>
-            </figure>
-          </div>
-        </div>
-        <div className="card3 pd-10">
-          <div className="card-image shadowBox">
-            <figure className="image is-4by3">
-              <img
-                src="https://picsum.photos/seed/picsum/600/400"
-                alt="Placeholder image"
-              />
-              <div className="text-block pd-10">
-                <p>Online Experiences</p>
-                <p>
-                  Unique activities we can do together, led by a world of hosts.
-                </p>
-              </div>
-            </figure>
-          </div>
-        </div>
+        <HomeCard />
       </HeroCardCarousel>
     </nav>
   );

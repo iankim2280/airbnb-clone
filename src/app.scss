@@ -8,15 +8,10 @@
 @import "pages/Home/Home";
 @import "pages/Account/Account";
 @import "pages/Contents/Contents";
+@import "pages/Details/Details";
 
 // @import "pages/Account/Account";
 
-// custom variables
-// $between: space-between;
-// $around: space-around;
-// $border-black: 1px solid black;
-// $border-lightgrey: 0.1px solid $grey-light;
-// $purple: #8a4d76;
 body {
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
     Helvetica Neue, sans-serif;
@@ -27,8 +22,3 @@ body {
   max-width: 1900px;
   // background-color: $purple;
 }
-
-// module or styled components
-// =border-radius($radius) {
-//   -webkit-border-radius: $radius;
-// }

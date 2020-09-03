@@ -6,46 +6,54 @@ const Informed = styled.section`
   background-color: rgb(247, 247, 247);
   padding: 20px;
 `;
-const Columns = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+const Header = styled.p`
+  width: 80%;
 `;
-const Section = () => {
-  return (
-    <Informed>
-      <p className="title is-4">Destinations for future trips</p>
-      <Columns className="columns">
-        <div className="column">
-          <p className="title is-6">More</p>
-          <p className="mg-tb-10">San Francisco</p>
-          <p className="mg-tb-10">Denver</p>
-          <p className="mg-tb-10">Houston</p>
-        </div>
-        <div className="column">
-          <p className="title is-6">More</p>
-          <p className="mg-tb-10">Los Angeles</p>
-          <p className="mg-tb-10">Washington DC</p>
-          <p className="mg-tb-10">New Orleans</p>
-        </div>
-        <div className="column">
-          <p className="title is-6">More</p>
-          <p className="mg-tb-10">New York</p>
-          <p className="mg-tb-10">Phoenix</p>
-          <p className="mg-tb-10">Boston</p>
-          <p className="mg-tb-10">Phoenix</p>
-          <p className="mg-tb-10">Boston</p>
-          <p className="mg-tb-10">Boston</p>
-        </div>
-        <div className="column">
-          <p className="title is-6">More</p>
-          <p className="mg-tb-10">Seatle</p>
-        </div>
-      </Columns>
-    </Informed>
-  );
-};
+const Columns = styled.div`
+  width: 90%;
+  margin: 0 auto;
+`;
+const Column = styled.div`
+  padding: 0 10px;
+`;
+class Section extends React.Component {
+  render() {
+    const contents = [
+      "Ottawa",
+      "London",
+      "Tokyo",
+      "Seoul",
+      "Los Angeles",
+      "Barrie",
+      "Toronto",
+      "New York",
+    ];
+    return (
+      <>
+        {contents.map((content, index) => (
+          <Informed>
+            <Header className="title is-4">
+              Destinations for future trippers.{" "}
+            </Header>
+            <Columns className="columns">
+              <Column className="column">
+                <p className="title is-6">More</p>
+              </Column>
+              <Column className="column">
+                <p className="title is-6">More</p>
+              </Column>
+              <Column className="column">
+                <p className="title is-6">More</p>
+              </Column>
+              <Column className="column">
+                <p className="title is-6">More</p>
+              </Column>
+            </Columns>
+          </Informed>
+        ))}
+      </>
+    );
+  }
+}
 
 export default Section;

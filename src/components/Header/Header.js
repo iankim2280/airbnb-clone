@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "@material-ui/core/Link";
 import logo from "../../img/logo.png";
-import Axios from "axios";
+// import Axios from "axios";
 import { useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { logout } from "../../actions/userAction";

@@ -6,11 +6,13 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Contents from "./pages/Contents";
+import Details from "./pages/Details";
 import "./app.scss";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Section from "./components/Section";
-import Body from "./components/Body";
+
+// import Body from "./components/Body";
 // import { logIn, logOut } from "./actions/userAction";
 
 function App() {
@@ -35,6 +37,7 @@ function App() {
       <Route path="/signup" component={Signup} />
       <Route path="/account" component={Account} />
       <Route path="/contents" component={Contents} />
+      <Route path="/details" component={Details} />
       <Redirect from="*" to="/" />
     </Switch>
   );
@@ -59,7 +62,7 @@ function App() {
         Login
       </button> */}
       {/* <Body isAuthenticated={isAuthenticated} /> */}
-      {isAuthenticated ? privateRouter() : publicRouter()}
+      {isAuthenticated ? publicRouter() : privateRouter()}
       <Section />
       <Footer />
     </div>
