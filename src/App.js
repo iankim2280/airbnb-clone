@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+// import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import Account from "./pages/Account";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
@@ -16,7 +18,7 @@ import Section from "./components/Section";
 // import { logIn, logOut } from "./actions/userAction";
 
 function App() {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   let isAuthenticated = localStorage.getItem("TOKEN");
   const { isAuth } = useSelector((state) => state.user);
   if (!isAuthenticated) {

@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Img } from "react-image";
 import HomeCard from "../../components/HomeCard";
 
 const Heading = styled.section`

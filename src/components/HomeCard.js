@@ -16,7 +16,7 @@ class HomeCard extends React.Component {
     return (
       <>
         {contents.map((content, index) => (
-          <Container key={content.class} className={content.class}>
+          <Container key={index} className={content.class}>
             <Link
               href="/contents"
               style={{ color: "black" }}

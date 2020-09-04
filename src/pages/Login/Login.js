@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+// import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { login } from "../../actions/userAction";
 import { useHistory } from "react-router-dom";
 import Avatar from "@material-ui/core/Avatar";
@@ -52,7 +53,7 @@ const Login = () => {
   const classes = useStyles();
   const dispatch = useDispatch();
   const history = useHistory();
-  const state = useSelector((state) => state.user);
+  // const state = useSelector((state) => state.user);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 

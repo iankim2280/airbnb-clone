@@ -8,9 +8,6 @@ const Main = styled.section`
   padding-top: 50px;
   margin: 0 auto;
   width: 80%;
-  @media only and screen (max-width: 1000px) {
-    display: none;
-  }
 `;
 const Stays = styled.p`
   font-weight: normal;

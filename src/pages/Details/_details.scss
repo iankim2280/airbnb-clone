@@ -1,78 +1,239 @@
-.accountDiv1 {
-  grid-area: 1 / 1 / 2 / 2;
-}
-.accountDiv2 {
-  grid-area: 1 / 2 / 2 / 3;
-}
-.accountDiv3 {
-  grid-area: 1 / 3 / 2 / 4;
-}
-.accountDiv4 {
-  grid-area: 2 / 1 / 3 / 2;
-}
-.accountDiv5 {
-  grid-area: 2 / 2 / 3 / 3;
-}
-.accountDiv6 {
-  grid-area: 2 / 3 / 3 / 4;
-}
-.accountDiv7 {
-  grid-area: 3 / 1 / 4 / 2;
-}
-.accountDiv8 {
-  grid-area: 3 / 2 / 4 / 3;
-}
+// detail page
+.pageDetailNav {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    li:nth-child(1) {
+      display: flex;
+      justify-content: space-around;
+      width: 40%;
+    }
+    li:nth-child(2) {
+      display: flex;
+      justify-content: space-around;
+      width: 15%;
+    }
+    li span .fa-star,
+    li span .fa-certificate {
+      color: #ff385c;
+    }
+  }
+  .cardCarousel {
+    // width: 110%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 
-@media only screen and (max-width: 1000px) {
-  .accountDiv1 {
-    grid-area: 1 / 1 / 2 / 2;
-  }
-  .accountDiv2 {
-    grid-area: 1 / 2 / 2 / 3;
-  }
-  .accountDiv3 {
-    grid-area: 2 / 1 / 3 / 2;
-  }
-  .accountDiv4 {
-    grid-area: 2 / 2 / 3 / 3;
-  }
-  .accountDiv5 {
-    grid-area: 3 / 1 / 4 / 2;
-  }
-  .accountDiv6 {
-    grid-area: 3 / 2 / 4 / 3;
-  }
-  .accountDiv7 {
-    grid-area: 4 / 1 / 5 / 2;
-  }
-  .accountDiv8 {
-    grid-area: 4 / 2 / 5 / 3;
+    .div1 {
+      .card-image .image img {
+        width: 100%;
+      }
+      grid-area: 1 / 1 / 3 / 3;
+    }
+    .div2 {
+      grid-area: 1 / 3 / 2 / 4;
+    }
+    .div3 {
+      grid-area: 1 / 4 / 2 / 4;
+    }
+    .div4 {
+      grid-area: 2 / 3 / 3 /4;
+    }
+    .div5 {
+      grid-area: 2 / 4 / 4 / 4;
+    }
   }
 }
 
-@media only screen and (max-width: 750px) {
-  .accountDiv1 {
-    grid-area: 1 / 1 / 2 / 2;
+.mapSection {
+  padding-top: 50px;
+  border-top: 0.1px solid lightgrey;
+  iframe {
+    margin-bottom: 24px;
   }
-  .accountDiv2 {
-    grid-area: 2 / 1 / 3 / 2;
+  p:nth-child(4) {
+    width: 50%;
+    margin-bottom: 24px;
   }
-  .accountDiv3 {
-    grid-area: 3 / 1 / 4 / 2;
+}
+.thingsToKnow {
+  padding-top: 50px;
+  border-top: 0.1px solid lightgrey;
+}
+.columns {
+  display: flex;
+  justify-content: space-between;
+  .column {
+    width: 100%;
+    padding: 0 10px;
   }
-  .accountDiv4 {
-    grid-area: 4 / 1 / 5 / 2;
+  .column .is-6 {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin: 20px 0;
   }
-  .accountDiv5 {
-    grid-area: 5 / 1 / 6 / 2;
+  .column div {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin: 20px 0;
+    font-weight: bold;
+    p {
+      font-weight: normal;
+    }
   }
-  .accountDiv6 {
-    grid-area: 6 / 1 / 7 / 2;
-  }
-  .accountDiv7 {
-    grid-area: 7 / 1 / 8 / 2;
-  }
-  .accountDiv8 {
-    grid-area: 8 / 1 / 9 / 2;
+}
+.bookingDetail {
+  padding-top: 50px;
+  border-top: 0.1px solid lightgrey;
+  .bookingList {
+    display: flex;
+    justify-content: space-around;
+    .bookingTabFirstList {
+      // width: 65%;
+      .homeInfoSection .homeInfo {
+        .homeInfoList {
+          .homeInfoListItems {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+
+            ul {
+              display: flex;
+              flex-direction: column;
+              li {
+                font-size: 0.8rem;
+              }
+            }
+          }
+        }
+        .contactHost {
+          div {
+            width: 70%;
+            p {
+              padding-bottom: 25px;
+            }
+            b {
+              text-decoration: underline;
+            }
+          }
+        }
+        .arrangements {
+          .arrangementsContents {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 70%;
+            li {
+              width: 40%;
+              margin: 0 10px;
+              div {
+                padding: 10px;
+              }
+            }
+          }
+        }
+        .amenities {
+          font-size: 1.1rem;
+          button {
+            margin-top: 20px;
+          }
+          .columns .column p {
+            padding: 5px 0;
+          }
+        }
+      }
+    }
+    .bookingTabSecondList {
+      width: 35%;
+      .bookingTab {
+        width: 80%;
+        margin: 0 auto;
+        position: sticky;
+        top: 100px;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        ul {
+          padding-top: 15px;
+          display: flex;
+          justify-content: space-around;
+          // align-items: center;
+          li {
+            display: flex;
+            justify-content: center;
+            width: 50%;
+          }
+        }
+        .bookingGrid {
+          border: 0.1px solid lightgrey;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          grid-column-gap: 0px;
+          grid-row-gap: 0px;
+          div {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            p {
+              padding: 4px;
+              font-size: 0.7rem;
+            }
+          }
+          .div1 {
+            border-right: 0.1px solid lightgrey;
+            grid-area: 1 / 1 / 2 / 2;
+          }
+          .div2 {
+            grid-area: 1 / 2 / 2 / 3;
+          }
+          .div3 {
+            border-top: 0.1px solid lightgrey;
+            grid-area: 2 / 1 / 3 / 3;
+          }
+        }
+        .bookingPrice {
+          width: 90%;
+          margin: 0 auto;
+          .columns {
+            padding: 5px;
+            border-bottom: 0.1px solid lightgrey;
+
+            display: flex;
+            justify-content: space-between;
+            .column:first-child {
+              display: flex;
+              justify-content: flex-start;
+              flex-direction: column;
+            }
+            .column:last-child {
+              display: flex;
+              align-items: flex-end;
+              flex-direction: column;
+            }
+          }
+        }
+        .total {
+          display: flex;
+          // justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          button {
+            width: 80%;
+            // margin: 0 auto;
+          }
+          ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            li {
+              width: 40%;
+            }
+          }
+        }
+      }
+    }
   }
 }
