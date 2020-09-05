@@ -201,14 +201,10 @@ const Booking = () => {
                 <p>
                   All rental check-ins are “non contact/digital” and every suite
                   has it’s own heating and cooling system (no shared air)! All…
-                  <a href="" className="anchorButton">
-                    <b>read more</b>
-                  </a>
+                  <b>read more</b>
                 </p>
                 <p>
-                  <a href="" className="anchorButton">
-                    <b>Contact host</b>
-                  </a>
+                  <b>Contact host</b>
                 </p>
               </div>
             </div>
