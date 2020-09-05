@@ -91,7 +91,7 @@ class Section extends React.Component {
     });
   }
   render() {
-    const { contents } = this.state;
+    // const { contents } = this.state;
     return (
       <>
         <Informed>

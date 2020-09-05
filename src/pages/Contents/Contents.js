@@ -13,11 +13,11 @@ const Stays = styled.p`
   font-weight: normal;
 `;
 const TravelInfo = styled.p`
+  width: 90%;
   font-size: 0.8rem;
   margin: 15px 0;
 `;
 const ContentsCardsSection = styled.section`
-  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, 1fr);

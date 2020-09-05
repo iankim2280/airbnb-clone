@@ -5,6 +5,7 @@ import { Link } from "@material-ui/core";
 
 const Container = styled.div`
   width: 100%;
+  box-sizing: border-box;
 `;
 
 class HomeCard extends React.Component {

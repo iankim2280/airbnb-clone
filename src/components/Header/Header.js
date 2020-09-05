@@ -20,7 +20,9 @@ const Header = ({ isAuthenticated }) => {
   return (
     <header className="contentsHeader fixedBefore">
       <div className="logo">
-        <img className="logoImage" src={logo} alt="Title and Logo" />
+        <Link href="/">
+          <img className="logoImage" src={logo} alt="Title and Logo" />
+        </Link>
       </div>
       <div className="middle">
         <ul className="middleUl pd-10">
