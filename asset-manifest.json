@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/iankim2280.github.io/airbnb-clone-frontend/static/css/main.03497b0b.chunk.css",
+    "main.js": "/iankim2280.github.io/airbnb-clone-frontend/static/js/main.f7a5e198.chunk.js",
+    "main.js.map": "/iankim2280.github.io/airbnb-clone-frontend/static/js/main.f7a5e198.chunk.js.map",
+    "runtime-main.js": "/iankim2280.github.io/airbnb-clone-frontend/static/js/runtime-main.fb27aea8.js",
+    "runtime-main.js.map": "/iankim2280.github.io/airbnb-clone-frontend/static/js/runtime-main.fb27aea8.js.map",
+    "static/js/2.5b1fe2e6.chunk.js": "/iankim2280.github.io/airbnb-clone-frontend/static/js/2.5b1fe2e6.chunk.js",
+    "static/js/2.5b1fe2e6.chunk.js.map": "/iankim2280.github.io/airbnb-clone-frontend/static/js/2.5b1fe2e6.chunk.js.map",
+    "index.html": "/iankim2280.github.io/airbnb-clone-frontend/index.html",
+    "precache-manifest.37e918a0c09bdb95b3b9dbc0f9de8767.js": "/iankim2280.github.io/airbnb-clone-frontend/precache-manifest.37e918a0c09bdb95b3b9dbc0f9de8767.js",
+    "service-worker.js": "/iankim2280.github.io/airbnb-clone-frontend/service-worker.js",
+    "static/css/main.03497b0b.chunk.css.map": "/iankim2280.github.io/airbnb-clone-frontend/static/css/main.03497b0b.chunk.css.map",
+    "static/js/2.5b1fe2e6.chunk.js.LICENSE.txt": "/iankim2280.github.io/airbnb-clone-frontend/static/js/2.5b1fe2e6.chunk.js.LICENSE.txt",
+    "static/media/logo.png": "/iankim2280.github.io/airbnb-clone-frontend/static/media/logo.a6f1ed9f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fb27aea8.js",
+    "static/js/2.5b1fe2e6.chunk.js",
+    "static/css/main.03497b0b.chunk.css",
+    "static/js/main.f7a5e198.chunk.js"
+  ]
+}
