@@ -21,7 +21,7 @@ class HomeCard extends React.Component {
             <Link
               href="/contents"
               style={{ color: "black" }}
-              activeStyle={{ color: "black" }}
+              activestyle={{ color: "black" }}
             >
               <div className="card-image shadowBox">
                 <figure className="image is-4by3">

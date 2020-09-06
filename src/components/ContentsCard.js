@@ -39,7 +39,7 @@ class ContentsCard extends React.Component {
             <Link
               href="/details"
               style={{ color: "black" }}
-              activeStyle={{ color: "black" }}
+              activestyle={{ color: "black" }}
             >
               <div class="card-image">
                 <Figure class="image is-4by3">

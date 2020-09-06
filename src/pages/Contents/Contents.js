@@ -21,8 +21,8 @@ const ContentsCardsSection = styled.section`
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
   .card1 {
     grid-area: 1 / 1 / 2 / 2;
   }
@@ -85,12 +85,13 @@ const ContentsCardsSection = styled.section`
   }
 
   @media only screen and (max-width: 1000px) {
-    margin: 0 auto;
     display: grid;
+    justify-content: center;
+    align-content: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
     .card1 {
       grid-area: 1 / 1 / 2 / 2;
     }

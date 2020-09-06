@@ -1,12 +1,11 @@
 import React from "react";
-import PropTypes from "prop-types";
 import styled from "styled-components";
 
 const CenterDiv = styled.div`
   margin: 0 auto;
   text-align: center;
 `;
-const ColumnItem = ({}) => {
+const ColumnItem = () => {
   const contents = [
     { name: "Ottawa" },
     { name: "London" },
@@ -28,8 +27,5 @@ const ColumnItem = ({}) => {
       ))}
     </CenterDiv>
   );
-};
-ColumnItem.propTypes = {
-  name: PropTypes.string.isRequired,
 };
 export default ColumnItem;

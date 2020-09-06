@@ -3,16 +3,20 @@ import React, { useEffect } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 // import { useDispatch, useSelector } from "react-redux";
 import { useSelector } from "react-redux";
+// Pages
 import Account from "./pages/Account";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Contents from "./pages/Contents";
 import Details from "./pages/Details";
-import "./app.scss";
+import Profile from "./pages/Profile";
+// Components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Section from "./components/Section";
+// css
+import "./app.scss";
 
 // import Body from "./components/Body";
 // import { logIn, logOut } from "./actions/userAction";
@@ -34,20 +38,23 @@ function App() {
   const privateRouter = () => (
     <Switch>
       <Route exact path="/" component={Home} />
-      <Route exact path="/profile" component={null} />
       <Route path="/login" component={Login} />
       <Route path="/signup" component={Signup} />
-      <Route path="/account" component={Account} />
       <Route path="/contents" component={Contents} />
       <Route path="/details" component={Details} />
+      <Route path="/account" component={Account} />
+      <Route path="/profile" component={Profile} />
       <Redirect from="*" to="/" />
     </Switch>
   );
 
   const publicRouter = () => (
     <Switch>
-      {/* <Route exact path="/" component={Home} />
-      <Redirect from="*" to="/login" /> */}
+      <Route exact path="/" component={Home} />
+      <Route path="/account" component={Account} />
+      <Route path="/profile" component={Profile} />
+      <Route path="/contents" component={Contents} />
+      <Route path="/details" component={Details} />
     </Switch>
   );
   return (

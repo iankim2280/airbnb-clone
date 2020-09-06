@@ -40,11 +40,19 @@ const Header = ({ isAuthenticated }) => {
           </li>
         </ul>
       </div>
+
       <div className="menu mg-t-20">
         {isAuthenticated ? (
-          <button className="button is-rounded" onClick={handleLogOut}>
-            Log out
-          </button>
+          <>
+            <button className="button is-rounded">
+              <Link href="/account" variant="body2">
+                MY Account
+              </Link>
+            </button>
+            <button className="button is-rounded" onClick={handleLogOut}>
+              Log out
+            </button>
+          </>
         ) : (
           <button className="button is-rounded">
             <Link href="/login" variant="body2">

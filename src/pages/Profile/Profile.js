@@ -37,12 +37,11 @@ const Parents = styled.section`
     grid-row-gap: 10px;
   }
 `;
-const Account = () => {
+const Profile = () => {
   return (
     <AccountMain>
       <Boxes>
         <Parents>
-          hello world
           <AccountDiv />
         </Parents>
       </Boxes>
@@ -50,4 +49,4 @@ const Account = () => {
   );
 };
 
-export default Account;
+export default Profile;
