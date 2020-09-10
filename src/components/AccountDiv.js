@@ -16,14 +16,26 @@ const AccountCardSection = styled.section`
 `;
 class AccountDiv extends React.Component {
   render() {
+    const contents = [];
+    for (let i = 1; i < 10; i++) {
+      contents.push({ class: `accountDiv${i}` });
+    }
     return (
-      <AccountCardSection class="pd-15">
-        <Link href="/profile" variant="body2">
-          <i class="fa fa-code" aria-hidden="true"></i>
-          <p class="title is-5">hello world</p>
-          <p>some infos</p>
-        </Link>
-      </AccountCardSection>
+      <>
+        {contents.map((content, index) => (
+          <AccountCardSection key={index} className={content.class}>
+            <Link
+              href="/profile"
+              style={{ color: "black" }}
+              activestyle={{ color: "black" }}
+            >
+              <i className="fa fa-code" aria-hidden="true"></i>
+              <p className="title is-5">Profile Card</p>
+              <p>Edit Your Innfos</p>
+            </Link>
+          </AccountCardSection>
+        ))}
+      </>
     );
   }
 }

@@ -42,7 +42,6 @@ const Account = () => {
     <AccountMain>
       <Boxes>
         <Parents>
-          hello world
           <AccountDiv />
         </Parents>
       </Boxes>
