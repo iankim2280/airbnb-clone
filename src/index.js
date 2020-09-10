@@ -4,7 +4,7 @@ import { createStore, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
 import reduxPromiseMiddleWare from "redux-promise";
 // import reduxThunkMiddleWare from "redux-thunk";
-import "./index.css";
+import "./index.scss";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import rootReducer from "./reducers";

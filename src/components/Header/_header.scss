@@ -25,6 +25,10 @@
         padding: 5px;
         display: flex;
         align-items: center;
+        input {
+          text-align: center;
+          border: none;
+        }
         div:first-child {
           font-weight: bold;
         }
@@ -51,7 +55,7 @@
     }
   }
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1050px) {
   header {
     height: 70px;
   }

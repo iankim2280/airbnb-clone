@@ -5,6 +5,7 @@ import logo from "../../img/logo.png";
 import { useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { logout } from "../../actions/userAction";
+import { Search } from "@material-ui/icons";
 
 const Header = ({ isAuthenticated }) => {
   const history = useHistory();
@@ -36,7 +37,7 @@ const Header = ({ isAuthenticated }) => {
             <div>GUESTS</div>
           </li>
           <li className="borderPadding">
-            <i className="fa fa-search"></i>
+            <Search />
           </li>
         </ul>
       </div>

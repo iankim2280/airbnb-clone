@@ -10,7 +10,7 @@ const AccountCardSection = styled.section`
   background-color: white;
 
   box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
-  p:nth-child(3) {
+  p:nth-child(2) {
     font-size: 0.9rem;
   }
 `;
@@ -29,9 +29,8 @@ class AccountDiv extends React.Component {
               style={{ color: "black" }}
               activestyle={{ color: "black" }}
             >
-              <i className="fa fa-code" aria-hidden="true"></i>
               <p className="title is-5">Profile Card</p>
-              <p>Edit Your Innfos</p>
+              <p>Edit Your Infos</p>
             </Link>
           </AccountCardSection>
         ))}

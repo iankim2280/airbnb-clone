@@ -1,16 +1,16 @@
+// $mainCol: #BADA55;
 @charset "utf-8";
 @import "~bootstrap/scss/bootstrap";
 // Import a Google Font
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 
-@import "components/Section/section";
-@import "components/Header/header";
-@import "pages/Home/Home";
-@import "pages/Account/Account";
-@import "pages/Contents/Contents";
-@import "pages/Details/Details";
-
-// @import "pages/Account/Account";
+@import "./components/Section/section";
+@import "./components/Header/header";
+@import "./pages/Contents/Contents";
+@import "./pages/Home/Home";
+@import "./pages/Profile/Profile";
+@import "./pages/Details/Details";
+@import "./pages/Account/Account";
 
 .mg-zero {
   margin: 0 auto;
