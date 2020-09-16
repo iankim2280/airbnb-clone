@@ -97,7 +97,7 @@ const Login = () => {
         </Avatar>
         {/* <img className="logoImage" src={logo} alt="Title and Logo" /> */}
         <Typography component="h1" variant="h5">
-          Sign in
+          Log in
         </Typography>
         <form className={classes.form} noValidate onSubmit={handleSubmit}>
           <TextField
@@ -133,7 +133,7 @@ const Login = () => {
             color="primary"
             className={classes.submit}
           >
-            Sign In
+            Log In
           </Button>
           <Grid container>
             <Grid item>

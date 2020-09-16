@@ -26,7 +26,7 @@ class ContentsCard extends React.Component {
           <Container className={content.class}>
             <CardContent className="card-image">
               <Figure className="image">
-                <Img src="https://picsum.photos/seed/picsum/600/400" />
+                <Img src="https://picsum.photos/651/500" />
               </Figure>
             </CardContent>
           </Container>

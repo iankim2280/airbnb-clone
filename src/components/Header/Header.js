@@ -55,11 +55,18 @@ const Header = ({ isAuthenticated }) => {
             </button>
           </>
         ) : (
-          <button className="button is-rounded">
-            <Link href="/login" variant="body2">
-              Log in
-            </Link>
-          </button>
+          <>
+            <button className="button is-rounded">
+              <Link href="/account" variant="body2">
+                MY Account
+              </Link>
+            </button>
+            <button className="button is-rounded">
+              <Link href="/login" variant="body2">
+                Log in
+              </Link>
+            </button>
+          </>
         )}
       </div>
     </header>
